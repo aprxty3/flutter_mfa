@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mfa/utils/helper.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  await Supabase.initialize(
+    url: 'https://dlhtoatbdpmenvzfynks.supabase.co',
+    anonKey:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRsaHRvYXRiZHBtZW52emZ5bmtzIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM3MDY0NTgsImV4cCI6MTk5OTI4MjQ1OH0.mfiegVRT8mGMGgS7yT63KKm2Xn7Xoqs81VVuH3jHxM4',
+  );
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,15 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter MFA',
+      theme: appTheme,
+      home: Scaffold(),
     );
   }
 }
