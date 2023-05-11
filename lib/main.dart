@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mfa/utils/helper.dart';
+import 'package:flutter_mfa/utils/routing.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
@@ -16,11 +17,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Flutter MFA',
       theme: appTheme,
-      home: Scaffold(),
+      routerConfig: router,
     );
   }
 }
