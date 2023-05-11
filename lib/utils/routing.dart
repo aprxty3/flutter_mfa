@@ -37,7 +37,7 @@ final router = GoRouter(
     ),
   ],
   redirect: (context, state) async {
-    if (state.location.contains('/auth') == true) {
+    if (state.location.contains('/screen') == true) {
       return null;
     }
 
