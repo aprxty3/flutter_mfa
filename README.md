@@ -1,16 +1,17 @@
-# flutter_mfa
+# MFA (Multi Factor Auth) Apps with Flutter
 
-A new Flutter project.
+a mini project who created MFA Apps with Flutter Framework, Go Router, and Supabase.
 
-## Getting Started
+## Requirement :
+* Go Router Package https://pub.dev/packages/go_router
+  to routing page the apps.
+* Supabase https://pub.dev/packages/supabase_flutter
+  to handle Multi Factor Auth.
+  
+## View
+![image](https://github.com/aprxty3/flutter_mfa/assets/73772152/594d5068-17a8-4229-a045-b5531fc207fe)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+https://github.com/aprxty3/flutter_mfa/assets/73772152/43675a53-e2df-4a09-a1c8-ea5aecd1e3b5
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
