@@ -13,11 +13,11 @@ final router = GoRouter(
   routes: [
     GoRoute(
       path: HomeScreen.route,
-      builder: (context, state) => const HomeScreen(),
+      builder: (context, state) => HomeScreen(),
     ),
     GoRoute(
       path: ListMFAScreen.route,
-      builder: (context, state) => const ListMFAScreen(),
+      builder: (context, state) => ListMFAScreen(),
     ),
     GoRoute(
       path: LoginScreen.route,

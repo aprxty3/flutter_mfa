@@ -6,9 +6,11 @@ import '../utils/helper.dart';
 import 'list_maf_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  HomeScreen({super.key});
   static const route = '/screen/home';
 
+  final privatePostsFuture =
+      supabase.from('private_posts').select<List<Map<String, dynamic>>>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,8 +47,6 @@ class HomeScreen extends StatelessWidget {
   }
 
   _contentBody() {
-    final privatePostsFuture =
-        supabase.from('private_posts').select<List<Map<String, dynamic>>>();
     return FutureBuilder<List<Map<String, dynamic>>>(
       future: privatePostsFuture,
       builder: (context, snapshot) {
